@@ -1,0 +1,185 @@
+/* تنسيقات عامة */
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F4F9; /* لون وردي هادئ فاتح جداً */
+    color: #333;
+    direction: rtl; /* لضمان أن النص يبدأ من اليمين إلى اليسار */
+}
+
+/* الهيدر (Header) */
+header {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+header h1 {
+    color: #C390B7; /* لون وردي هادئ */
+    margin: 0.5em 0;
+}
+
+header p {
+    color: #666;
+}
+
+/* القسم الرئيسي (Main) */
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+/* نموذج الطلب (Order Form) */
+.order-form {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.order-form h2 {
+    color: #C390B7;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.input-group {
+    margin-bottom: 1.5em;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #C390B7;
+    outline: none;
+    box-shadow: 0 0 5px rgba(195, 144, 183, 0.5);
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #C390B7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #b27ba9;
+}
+
+/* رسالة التأكيد (Success Message) */
+.success-message {
+    text-align: center;
+    padding: 3em;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 2em;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.success-message h3 {
+    color: #C390B7;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.success-message p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+/* عارض آراء الزبائن (Carousel) */
+.testimonials-carousel {
+    margin-top: 3em;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.testimonials-carousel h2 {
+    color: #C390B7;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.nav-btn {
+    background-color: #C390B7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #b27ba9;
+}
+
+/* الفوتر (Footer) */
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background-color: #fff;
+    color: #888;
+    border-top: 1px solid #eee;
+    margin-top: 3em;
+}
