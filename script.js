@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         *العنوان:* ${sanitizedAddress}
         *رابط سلة شي إن:* ${sanitizedSheinLink}
 
-        *يرجى تأكيد الطلب مع الزبون*
+        
         `;
 
         const whatsappNumber = '218946350121';
