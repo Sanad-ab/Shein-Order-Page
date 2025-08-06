@@ -27,7 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // التحقق من أن الرابط هو من موقع شي إن فقط
-        if (!sheinLink.startsWith('https://www.shein.com') && !sheinLink.startsWith('https://ar.shein.com')) {
+        const sheinDomainRegex = /shein\.com/i;
+        if (!sheinDomainRegex.test(sheinLink)) {
             alert('الرجاء إدخال رابط صحيح من موقع شي إن فقط.');
             return; // إيقاف تنفيذ الوظيفة
         }
