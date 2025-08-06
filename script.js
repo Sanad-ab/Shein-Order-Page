@@ -58,36 +58,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
         window.open(whatsappURL, '_blank');
     });
-
-    // 2. وظيفة عارض آراء الزبائن المتحرك (Carousel) - نفس الكود السابق
-    const carouselImages = document.querySelector('.carousel-images');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const images = document.querySelectorAll('.carousel-images img');
-
-    let currentIndex = 0;
-    const totalImages = images.length;
-
-    if (images.length > 0) {
-        const imageWidth = images[0].clientWidth;
-
-        function updateCarousel() {
-            carouselImages.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
-        }
-
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalImages;
-            updateCarousel();
-        });
-
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-            updateCarousel();
-        });
-
-        window.addEventListener('resize', () => {
-            const newImageWidth = images[0].clientWidth;
-            carouselImages.style.transform = `translateX(-${currentIndex * newImageWidth}px)`;
-        });
-    }
 });
